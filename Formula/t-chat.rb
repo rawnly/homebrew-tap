@@ -2,7 +2,7 @@
 #                https://rubydoc.brew.sh/Formula
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 
-class TermChat < Formula
+class TChat < Formula
   desc "Cool socket.io chat via terminal"
   homepage "https://github.com/rawnly/terminal-chat"
   url "https://github.com/Rawnly/terminal-chat/releases/latest/download/t-chat.tar.gz"
