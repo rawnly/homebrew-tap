@@ -6,7 +6,7 @@ class Aalias < Formula
   desc "An easy way to add bash aliases"
   homepage "https://github.com/rawnly/aalias"
   url "https://github.com/Rawnly/aalias/releases/latest/download/aalias.tar.gz"
-  sha256 "2440c2bdd7e460809362d23e372d0536d4b5ded3fa493aac9f30923ef756d397"
+  sha256 "f20a9806a8ded02cd4779d3e5afa0a76acce3e927419ec9a0794ecdaa42338c1"
   version "0.1.0"
 
   def install 
