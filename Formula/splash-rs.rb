@@ -2,7 +2,7 @@
 #                https://rubydoc.brew.sh/Formula
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 
-class Splash CLI < Formula
+class SplashCLI < Formula
   desc "Download desktop wallpapers with ease"
   homepage "https://github.com/splash-cli/splash-cli-rs"
   url "https://github.com/splash-cli/splash-cli-rs/releases/latest/download/splash.tar.gz"
