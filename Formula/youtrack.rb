@@ -5,9 +5,12 @@
 class Youtrack < Formula
   desc "Manage YouTrack tasks from terminal"
   homepage "https://github.com/rawnly/youtrack-cli-go"
-  url "https://github.com/Rawnly/youtrack-cli-go/releases/latest/download/youtrack.tar.gz"
-  sha256 "4a890c8194760987b2c57f7377a505d40d0df6e15b1f59891b526ae598b3f49b"
-  version "0.0.1"
+  url "https://github.com/Rawnly/youtrack-cli-go/releases/download/0.0.3/youtrack.tar.gz"
+  sha256 "1ec45d076740dedde676cda8b153b26d9e94812fc2ca530015f48704eeed6da5"
+  version "0.0.3"
+  license "MIT"
+  
+  depends_on "go" => :build
 
   def install 
     bin.install "youtrack"
