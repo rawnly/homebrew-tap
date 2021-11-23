@@ -5,21 +5,21 @@
 class GitAddCommit < Formula
   desc "Commit made easy"
   homepage "https://github.com/rawnly/git-add-commit"
-  version "0.0.2"
+  version "0.0.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/rawnly/git-add-commit/releases/download/0.0.2/git-add-commit_0.0.2_Darwin_arm64.tar.gz"
-      sha256 "5e6c8ceba6e5d1fd7840db085327b707a597250bb0d2df86cc7f2993e2d40234"
+      url "https://github.com/rawnly/git-add-commit/releases/download/0.0.3/git-add-commit_0.0.3_Darwin_arm64.tar.gz"
+      sha256 "06262d7bcd1ee7fc8b7042d5681112c2a28ded5deab0e596588b9b57bb332ab3"
 
       def install
         bin.install "git-add-commit"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/rawnly/git-add-commit/releases/download/0.0.2/git-add-commit_0.0.2_Darwin_x86_64.tar.gz"
-      sha256 "61d5aef7f599ae2ac656e2256e13949e70ddf69de35b45f26676ef5c311d2a4c"
+      url "https://github.com/rawnly/git-add-commit/releases/download/0.0.3/git-add-commit_0.0.3_Darwin_x86_64.tar.gz"
+      sha256 "2bf74506ce067dc5ce2f2db477671cf993b8bdbc7ad3b8508646635987757ba9"
 
       def install
         bin.install "git-add-commit"
@@ -29,16 +29,16 @@ class GitAddCommit < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rawnly/git-add-commit/releases/download/0.0.2/git-add-commit_0.0.2_Linux_arm64.tar.gz"
-      sha256 "52442b00601a22d94d1e9b5a7aaa649fe0578b4de2c6fb6fd8c320d83463edb0"
+      url "https://github.com/rawnly/git-add-commit/releases/download/0.0.3/git-add-commit_0.0.3_Linux_arm64.tar.gz"
+      sha256 "3b9ab51554272aa3b69b328c54207555fa9e66a661adaf7d40396b1873925ba9"
 
       def install
         bin.install "git-add-commit"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/rawnly/git-add-commit/releases/download/0.0.2/git-add-commit_0.0.2_Linux_x86_64.tar.gz"
-      sha256 "a402e8ad33ce5b4fc76d3be8b0fc0c9fa1445670fb1930b781830395c8d70729"
+      url "https://github.com/rawnly/git-add-commit/releases/download/0.0.3/git-add-commit_0.0.3_Linux_x86_64.tar.gz"
+      sha256 "28f034a43417e620db20d7af6785a4990b2045e33bfb426cf1ad2e0fabdd7426"
 
       def install
         bin.install "git-add-commit"
