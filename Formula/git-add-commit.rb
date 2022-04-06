@@ -5,30 +5,30 @@
 class GitAddCommit < Formula
   desc "Commit made easy"
   homepage "https://github.com/rawnly/git-add-commit"
-  version "0.0.5"
+  version "0.0.6"
   license "MIT"
 
   on_macos do
-    url "https://github.com/rawnly/git-add-commit/releases/download/0.0.5/GitAddCommit_0.0.5_Darwin_all.tar.gz"
-    sha256 "a8408ca97854fae561845120c91de518aa4991f115eb136bb64a66e0286f9be6"
+    url "https://github.com/rawnly/git-add-commit/releases/download/0.0.6/GitAddCommit_0.0.6_Darwin_all.tar.gz"
+    sha256 "c0fbd15c52080a8be0eceb457ff0409ec6f93db31a6be3360c90d62d86863b54"
 
     def install
-      bin.install "GitAddCommit_0.0.5"
+      bin.install "git-add-commit"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rawnly/git-add-commit/releases/download/0.0.5/GitAddCommit_0.0.5_Linux_arm64.tar.gz"
-      sha256 "faa3e48630483a0b23af85aafec3d90fd2948333328ec84f9f1282074da24ee5"
+      url "https://github.com/rawnly/git-add-commit/releases/download/0.0.6/GitAddCommit_0.0.6_Linux_arm64.tar.gz"
+      sha256 "593edd82f431f3f288e0962a4597fd813501ebdddf2a83ef691d8c1d67284234"
 
       def install
         bin.install "git-add-commit"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/rawnly/git-add-commit/releases/download/0.0.5/GitAddCommit_0.0.5_Linux_x86_64.tar.gz"
-      sha256 "2b708666179b39352998f7b903e5cd59f0ff5eb79b77a34891f3fc8880127e78"
+      url "https://github.com/rawnly/git-add-commit/releases/download/0.0.6/GitAddCommit_0.0.6_Linux_x86_64.tar.gz"
+      sha256 "51b0fe9c5066ae6c6a689a4bc607cc72c80ec09b1d5f455241d05de2b07af85a"
 
       def install
         bin.install "git-add-commit"
