@@ -5,40 +5,30 @@
 class GitSelect < Formula
   desc "git checkout with ease"
   homepage "https://github.com/rawnly/git-select"
-  version "0.0.2"
+  version "0.0.3"
   license "MIT"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/Rawnly/git-select/releases/download/0.0.2/git-select_0.0.2_Darwin_arm64.tar.gz"
-      sha256 "5133f8582881d480f35a32a2016f5ce54fb977830f6fdc0dd4ec71952cd32440"
+    url "https://github.com/rawnly/git-select/releases/download/0.0.3/git-select_0.0.3_Darwin_all.tar.gz"
+    sha256 "cd7c18ce06e2775f606027aa6c259f750c5c6ffcf16817325e3a0f93ad9d1c8e"
 
-      def install
-        bin.install "git-select"
-      end
-    end
-    if Hardware::CPU.intel?
-      url "https://github.com/Rawnly/git-select/releases/download/0.0.2/git-select_0.0.2_Darwin_x86_64.tar.gz"
-      sha256 "d546b27ce4231edf89170f244622f86b70d5cd2862fa84392e4ed318785ca619"
-
-      def install
-        bin.install "git-select"
-      end
+    def install
+      bin.install "git-select"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Rawnly/git-select/releases/download/0.0.2/git-select_0.0.2_Linux_arm64.tar.gz"
-      sha256 "a152c117c16722f6e7f8b3fafba43455f1ee1c80b3bcffc7992999391eadf0d8"
+      url "https://github.com/rawnly/git-select/releases/download/0.0.3/git-select_0.0.3_Linux_arm64.tar.gz"
+      sha256 "11c04345623035d8fd7e731cdef8b0d85f19df6c3acfbdd989987ed354e23eb8"
 
       def install
         bin.install "git-select"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Rawnly/git-select/releases/download/0.0.2/git-select_0.0.2_Linux_x86_64.tar.gz"
-      sha256 "899a582c55e0315b152e2be427a249d9d90225a2ed3964d2e0ed8202f7a0f0ab"
+      url "https://github.com/rawnly/git-select/releases/download/0.0.3/git-select_0.0.3_Linux_x86_64.tar.gz"
+      sha256 "46f38d13870fd3f55fe58bf8eba25b2332e8a22265341713287221e57b2613e9"
 
       def install
         bin.install "git-select"
