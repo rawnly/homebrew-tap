@@ -5,21 +5,21 @@
 class SplashCli < Formula
   desc "Splash is a command line interface for Unsplash."
   homepage "https://splash-cli.app"
-  version "4.0.0-alpha.5"
+  version "4.0.0-alpha.6"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/splash-cli/splash-cli/releases/download/4.0.0-alpha.5/splash_4.0.0-alpha.5_Darwin_arm64.tar.gz"
-      sha256 "b13ec6e3ddf444fb6902279c4dcc9afef8670e14f1f369b717c91fb901ce7eef"
+      url "https://github.com/splash-cli/splash-cli/releases/download/4.0.0-alpha.6/splash_4.0.0-alpha.6_Darwin_arm64.tar.gz"
+      sha256 "11bd783f3b91231096c6c596901851ecc19f9434515acfd18d4efad52f01ed54"
 
       def install
         bin.install "splash"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/splash-cli/splash-cli/releases/download/4.0.0-alpha.5/splash_4.0.0-alpha.5_Darwin_x86_64.tar.gz"
-      sha256 "74a2895b30282b327558a4530ba839eea9157dd12b9da8e09a1a9f7167708e4c"
+      url "https://github.com/splash-cli/splash-cli/releases/download/4.0.0-alpha.6/splash_4.0.0-alpha.6_Darwin_x86_64.tar.gz"
+      sha256 "1888879b3cee8080d04912f45f4c3f7b5ad6251198592649cd91d24ef9458387"
 
       def install
         bin.install "splash"
@@ -29,16 +29,16 @@ class SplashCli < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/splash-cli/splash-cli/releases/download/4.0.0-alpha.5/splash_4.0.0-alpha.5_Linux_arm64.tar.gz"
-      sha256 "45143cde4592e297371c0379906ffa9f21efd305f981553cab1b7bd351283771"
+      url "https://github.com/splash-cli/splash-cli/releases/download/4.0.0-alpha.6/splash_4.0.0-alpha.6_Linux_arm64.tar.gz"
+      sha256 "6a9a9062473168a4b0d90eb8cd4c55fd3acbe4dfb014d0ad7167cebe9ed925a7"
 
       def install
         bin.install "splash"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/splash-cli/splash-cli/releases/download/4.0.0-alpha.5/splash_4.0.0-alpha.5_Linux_x86_64.tar.gz"
-      sha256 "3ee642957f6e40659a0361b15b5d3caea0632dbc468260defb8cdc845216a704"
+      url "https://github.com/splash-cli/splash-cli/releases/download/4.0.0-alpha.6/splash_4.0.0-alpha.6_Linux_x86_64.tar.gz"
+      sha256 "14a96023411accac4c4c4009c0b8756989b0c31ca71036b21bef64afe1a7d0e3"
 
       def install
         bin.install "splash"
