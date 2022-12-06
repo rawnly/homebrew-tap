@@ -5,12 +5,14 @@
 class GitAddCommit < Formula
   desc "Commit made easy"
   homepage "https://github.com/rawnly/git-add-commit"
-  version "0.0.7"
+  version "0.0.8"
   license "MIT"
 
+  depends_on "git"
+
   on_macos do
-    url "https://github.com/rawnly/git-add-commit/releases/download/0.0.7/GitAddCommit_0.0.7_Darwin_all.tar.gz"
-    sha256 "bc5ff9c691013f58836f87ebc7c656b10be808ce3009cfa74cdc442ca0420445"
+    url "https://github.com/rawnly/git-add-commit/releases/download/0.0.8/GitAddCommit_0.0.8_Darwin_all.tar.gz"
+    sha256 "694e33295aa896aace27927503f63ec0203fd09ae5348c96c3daedb1c8a707e7"
 
     def install
       bin.install "git-add-commit"
@@ -19,16 +21,16 @@ class GitAddCommit < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rawnly/git-add-commit/releases/download/0.0.7/GitAddCommit_0.0.7_Linux_arm64.tar.gz"
-      sha256 "da454d1b89a66499e441f262f82c6977a8668c9405a895b1f70c7129e0e00dc2"
+      url "https://github.com/rawnly/git-add-commit/releases/download/0.0.8/GitAddCommit_0.0.8_Linux_arm64.tar.gz"
+      sha256 "745677448b71d6884b1f087484fa982ce19c3b78e1a1d92246a30142c70ad10a"
 
       def install
         bin.install "git-add-commit"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/rawnly/git-add-commit/releases/download/0.0.7/GitAddCommit_0.0.7_Linux_x86_64.tar.gz"
-      sha256 "0c3765bd759b3b6362fe81a85ba271d77d78db15a17ac9568828fc1017f05ba6"
+      url "https://github.com/rawnly/git-add-commit/releases/download/0.0.8/GitAddCommit_0.0.8_Linux_x86_64.tar.gz"
+      sha256 "d891fa82b34bcc6c95cdcd9ca07cf0b65dea00b3eee8a06b83d08c20710e72df"
 
       def install
         bin.install "git-add-commit"
@@ -36,10 +38,9 @@ class GitAddCommit < Formula
     end
   end
 
-  depends_on "git"
-
-  def caveats; <<~EOS
-    git-add-commit [message]
-  EOS
+  def caveats
+    <<~EOS
+      git-add-commit [message]
+    EOS
   end
 end
