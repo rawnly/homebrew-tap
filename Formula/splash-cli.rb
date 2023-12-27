@@ -5,21 +5,21 @@
 class SplashCli < Formula
   desc "Splash is a command line interface for Unsplash."
   homepage "https://splash-cli.app"
-  version "4.0.0-alpha.9"
+  version "4.0.0-alpha.11"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/rawnly/splash-cli/releases/download/4.0.0-alpha.9/splash_4.0.0-alpha.9_darwin_arm64.tar.gz"
-      sha256 "2ffc3db1964f34801c6e307882b83cc523028ccfecf8f55c0665df4b889d7fc0"
+      url "https://github.com/rawnly/splash-cli/releases/download/4.0.0-alpha.11/splash_4.0.0-alpha.11_darwin_arm64.tar.gz"
+      sha256 "9ced5a5fc66c682365e092a33979846d810d9cc9ecbde21fb1e85aa4f5fdb26e"
 
       def install
         bin.install "splash"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/rawnly/splash-cli/releases/download/4.0.0-alpha.9/splash_4.0.0-alpha.9_darwin_amd64.tar.gz"
-      sha256 "4747cf14c20bcd3d50564d18adc8a3855257712b27f3cec306440b1bccedf311"
+      url "https://github.com/rawnly/splash-cli/releases/download/4.0.0-alpha.11/splash_4.0.0-alpha.11_darwin_amd64.tar.gz"
+      sha256 "aad738493919867df1aab0e830bf3df727acfcafe2398301c23a67331b2d99b5"
 
       def install
         bin.install "splash"
@@ -28,17 +28,17 @@ class SplashCli < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/rawnly/splash-cli/releases/download/4.0.0-alpha.9/splash_4.0.0-alpha.9_linux_amd64.tar.gz"
-      sha256 "4f6af862e0871709024420f161452165e4ca7cfb93233991162df26d9dccb27b"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/rawnly/splash-cli/releases/download/4.0.0-alpha.11/splash_4.0.0-alpha.11_linux_arm64.tar.gz"
+      sha256 "6f84bd4c1ef8623fb590e2c78bf66180da0700747ca630647e0fb204373703e7"
 
       def install
         bin.install "splash"
       end
     end
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rawnly/splash-cli/releases/download/4.0.0-alpha.9/splash_4.0.0-alpha.9_linux_arm64.tar.gz"
-      sha256 "a70eb4a832bc44c37964f2e04268a7a49e19d68dda0e8c634f6a5f101537a29e"
+    if Hardware::CPU.intel?
+      url "https://github.com/rawnly/splash-cli/releases/download/4.0.0-alpha.11/splash_4.0.0-alpha.11_linux_amd64.tar.gz"
+      sha256 "e158c13be10e598a435a01f7d4d58328d36fe7c859b90f65f2d57dd7d8eef38b"
 
       def install
         bin.install "splash"
