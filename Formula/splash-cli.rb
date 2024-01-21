@@ -5,21 +5,21 @@
 class SplashCli < Formula
   desc "Splash is a command line interface for Unsplash."
   homepage "https://splash-cli.app"
-  version "4.1.2"
+  version "4.1.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rawnly/splash-cli/releases/download/4.1.2/splash_4.1.2_darwin_amd64.tar.gz"
-      sha256 "579d0f9ee1020a00d74a4fc38468f1ace20b84ae71bb25b9f2f3a8280e1afd6e"
+      url "https://github.com/rawnly/splash-cli/releases/download/4.1.3/splash_4.1.3_darwin_amd64.tar.gz"
+      sha256 "e3deb8a611215aab7ac7b12d676d58ddc13ffbda45bd27cb4336a7c0f5a6ead8"
 
       def install
         bin.install "splash"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rawnly/splash-cli/releases/download/4.1.2/splash_4.1.2_darwin_arm64.tar.gz"
-      sha256 "3937b8ba5aa0aed00c73ff59df8ddea003c9d40f7b87c4f889c447d3a4618170"
+      url "https://github.com/rawnly/splash-cli/releases/download/4.1.3/splash_4.1.3_darwin_arm64.tar.gz"
+      sha256 "d108a3f544626db9c07d7e675476fa60b9ea539e47195091776cc258ee13e97f"
 
       def install
         bin.install "splash"
@@ -29,16 +29,16 @@ class SplashCli < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/rawnly/splash-cli/releases/download/4.1.2/splash_4.1.2_linux_amd64.tar.gz"
-      sha256 "3cd53ffcde8943971ada435f511d57421072fa6adda12bb49c55f06e805fe8bb"
+      url "https://github.com/rawnly/splash-cli/releases/download/4.1.3/splash_4.1.3_linux_amd64.tar.gz"
+      sha256 "97fa8471c4c45bd6a1d8912800ff9f2bcb5fa5a1a3a6f527fc3e20ec67b8c46d"
 
       def install
         bin.install "splash"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rawnly/splash-cli/releases/download/4.1.2/splash_4.1.2_linux_arm64.tar.gz"
-      sha256 "f7466c47032bfece8bcabe166b6f992f707f281ba313733ffe3cb7ee09978a5c"
+      url "https://github.com/rawnly/splash-cli/releases/download/4.1.3/splash_4.1.3_linux_arm64.tar.gz"
+      sha256 "35b2cb843ec76be7b785b0fec0567bf1c998e1b30debc381086a197f275c8837"
 
       def install
         bin.install "splash"
