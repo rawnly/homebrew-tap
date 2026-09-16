@@ -5,21 +5,21 @@
 class SplashCli < Formula
   desc "Splash is a command line interface for Unsplash."
   homepage "https://untitled.dev"
-  version "4.1.7"
+  version "4.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rawnly/splash-cli/releases/download/4.1.7/splash_Darwin_x86_64.tar.gz"
-      sha256 "f18aa9d435ff19951cb6a7387134578f17ffac61007f36a95f7cf49c98e23e59"
+      url "https://github.com/rawnly/splash-cli/releases/download/4.2.0/splash_Darwin_x86_64.tar.gz"
+      sha256 "19bd0434a6f3012152a7d0e00620709f69424dfe9c0a9b784a8315adac081396"
 
       define_method(:install) do
         bin.install "splash"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rawnly/splash-cli/releases/download/4.1.7/splash_Darwin_arm64.tar.gz"
-      sha256 "0f8fec9da6a64f10f4aa2c95664ca5a08485a6a554d9d15b58cf3f0893a7243d"
+      url "https://github.com/rawnly/splash-cli/releases/download/4.2.0/splash_Darwin_arm64.tar.gz"
+      sha256 "c8ef68d498a5275bde4583339160386193eddec919a9b4a84d53c195c77901b3"
 
       define_method(:install) do
         bin.install "splash"
@@ -29,15 +29,15 @@ class SplashCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rawnly/splash-cli/releases/download/4.1.7/splash_Linux_x86_64.tar.gz"
-      sha256 "7f8a3502133543589e6cabd0bec4d2378d7de6516e05c82e7a9d09462f1c4137"
+      url "https://github.com/rawnly/splash-cli/releases/download/4.2.0/splash_Linux_x86_64.tar.gz"
+      sha256 "3f92e83f54c1306cee35353557b097c9f2c608bc6d273c7aa65fa0096ba8e1a1"
       define_method(:install) do
         bin.install "splash"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rawnly/splash-cli/releases/download/4.1.7/splash_Linux_arm64.tar.gz"
-      sha256 "d158bbeb03f26c0532e4fa9041ff836368b972ddb4c0a441a117cf2f9485f4a2"
+      url "https://github.com/rawnly/splash-cli/releases/download/4.2.0/splash_Linux_arm64.tar.gz"
+      sha256 "6f64d78fdd3f8f83659852260c9606df88691b6dae5cb106828f73bf4586f8d7"
       define_method(:install) do
         bin.install "splash"
       end
