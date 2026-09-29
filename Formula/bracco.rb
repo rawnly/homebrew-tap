@@ -6,23 +6,23 @@ class Bracco < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/rawnly/bracco/releases/download/v0.2.0/bracco-aarch64-apple-darwin.tar.xz"
-      sha256 "42b49670c5adbeb380868a79952baa3cba49409768160f756b0dec4fefa39342"
+      url "https://github.com/rawnly/bracco/releases/download/v0.2.2/bracco-aarch64-apple-darwin.tar.xz"
+      sha256 "9d39c5d0ef5b38d74a5ea29f9ada7cc483bb810fd9c73291cc40f6bc90593c0a"
     end
     on_intel do
-      url "https://github.com/rawnly/bracco/releases/download/v0.2.0/bracco-x86_64-apple-darwin.tar.xz"
-      sha256 "e16bfb661ebc99e0c1535b987424125783fdaaf8aa7da101f5f2a81e7926a0b4"
+      url "https://github.com/rawnly/bracco/releases/download/v0.2.2/bracco-x86_64-apple-darwin.tar.xz"
+      sha256 "4682d1e31c1a78b170bc013a710e83fa5b5ec0a80f268aae19367cce22b41d0d"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/rawnly/bracco/releases/download/v0.2.0/bracco-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "82b05e9b5e87781d5435b50981e3973d6221e72c329d807dd8e7e05f74c3f43c"
+      url "https://github.com/rawnly/bracco/releases/download/v0.2.2/bracco-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "61ef6b9e8c3f1828fe1a211b664fbd4e5c64124625c3e7d2888f9d7e4dcc3fd5"
     end
     on_intel do
-      url "https://github.com/rawnly/bracco/releases/download/v0.2.0/bracco-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "fbcec6a8ef37f25152cab96ca902eeeec7676e74ea771ca143474f011561b4fe"
+      url "https://github.com/rawnly/bracco/releases/download/v0.2.2/bracco-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "cb82c2ffb5eef4f5e931bb7df1004cebe63c8ccf320db3872642ae848bb72f7f"
     end
   end
 
